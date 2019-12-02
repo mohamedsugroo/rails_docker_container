@@ -1,7 +1,9 @@
 class HomeController < ApplicationController
 
   def index
-    render json: "server ready to go !!!! #{Time.now}"
+    user = User.all
+    User.create(username: 'momo', time_stamp: Time.now)
+    render json: user
   end
 
 end

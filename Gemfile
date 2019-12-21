@@ -12,7 +12,8 @@ gem 'puma', '~> 4.1'
 # custom rubygems
 gem 'bcrypt', '~> 3.1.7'
 gem 'mongoid', '~> 7.0', '>= 7.0.5'
-
+gem 'delayed_job_mongoid'
+gem 'whenever', require: false
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'

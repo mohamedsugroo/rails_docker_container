@@ -9,7 +9,7 @@ development:
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - ec2-35-176-11-54.eu-west-2.compute.amazonaws.com:27017
+        - mongodb:27017
       options:
         # Note that all options listed below are Ruby driver client options (the mongo gem).
         # Please refer to the driver documentation of the version of the mongo gem you are using
@@ -169,7 +169,7 @@ production:
     default:
       database: app_test
       hosts:
-        - ec2-35-176-11-54.eu-west-2.compute.amazonaws.com:27017
+        - mongodb:27017
       options:
         read:
           mode: :primary
